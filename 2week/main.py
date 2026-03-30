@@ -194,7 +194,7 @@ class Main:
             data_list.append(Data(elements))
 
         self.storage.set(data_list)
-        self.storage.sort(Timestamp, False)
+        self.storage.sort(Timestamp, True)
 
         for data in self.storage.get():
             print(data)
